@@ -11,24 +11,17 @@ public class Calc {
             int num2 = Integer.parseInt(args[2]);
             
             switch (operator) {
-                case "+":
-                    System.out.println("Sum of " + num1 + " and " + num2 + " is " + (num1 + num2));
-                    break;
-                case "-":
-                    System.out.println("Difference of " + num1 + " and " + num2 + " is " + (num1 - num2));
-                    break;
-                case "*":
-                    System.out.println("Product of " + num1 + " and " + num2 + " is " + (num1 * num2));
-                    break;
-                case "/":
+                case "+" -> System.out.println("Sum of " + num1 + " and " + num2 + " is " + (num1 + num2));
+                case "-" -> System.out.println("Difference of " + num1 + " and " + num2 + " is " + (num1 - num2));
+                case "*" -> System.out.println("Product of " + num1 + " and " + num2 + " is " + (num1 * num2));
+                case "/" -> {
                     if (num2 != 0) {
                         System.out.println("Division of " + num1 + " by " + num2 + " is " + (num1 / num2));
                     } else {
                         System.out.println("Error: Division by zero is not allowed.");
                     }
-                    break;
-                default:
-                    System.out.println("Invalid operator! Use +, -, *, or /.");
+                }
+                default -> System.out.println("Invalid operator! Use +, -, *, or /.");
             }
         } catch (NumberFormatException e) {
             System.out.println("Error: Please enter valid integers.");
