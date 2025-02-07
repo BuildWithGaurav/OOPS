@@ -2,7 +2,7 @@ public class Calc {
     public static void main(String[] args) {
         if (args.length != 3) {
             System.out.println("Usage: java Calc <number1> <operator> <number2>");
-            return;
+            return; 
         }
         
         try {
