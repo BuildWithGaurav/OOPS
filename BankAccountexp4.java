@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-class BankAccount {
+class BankAccountexp4 {
     private double balance;
 
     // Constructor to initialize balance
-    public BankAccount(double initialBalance) {
+    public BankAccountexp4(double initialBalance) {
         this.balance = initialBalance;
     }
 
@@ -38,7 +38,7 @@ class BankAccount {
         
         System.out.print("Enter initial balance: ");
         double initialBalance = scanner.nextDouble();
-        BankAccount account = new BankAccount(initialBalance);
+        BankAccountexp4 account = new BankAccountexp4(initialBalance);
         
         System.out.print("Enter deposit amount: ");
         double depositAmount = scanner.nextDouble();
